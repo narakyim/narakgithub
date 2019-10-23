@@ -3,8 +3,4 @@
 
 
 
-
-
-
-
-FFFFF UUUUUU STOP STOP STOP FFFF UUUU
+Bunleap force me to do this! HELP! plz xD
