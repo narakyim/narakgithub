@@ -16,7 +16,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-image: url(./Sources/Images/Cambodiaflag.JPG);
+    background-image: url(./Sources/Images/gtawall.jpg);
 }
 
 /* Khmer Language */
@@ -26,7 +26,7 @@ html {
 
 /* Video */
 iframe {
-  box-shadow: black;
+  box-shadow: 0 0 20px black;
   align-items: center;
 }
 
@@ -66,24 +66,6 @@ span.wave {
     }
 }
 
-#title-quote {
-    /* background-color: #33bfd0; */
-    color: white;
-    margin-top: 25px;
-    font-size: 70px;
-    text-align: center;
-    animation-iteration-count: infinite;    
-    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-
-
-
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -115,7 +97,12 @@ a {
 a:hover {
   color: #333;
   font-weight: 100;
+  text-decoration: underline;
   /* background-color: #33bfd0; */
+}
+
+#title-quote:hover {
+  text-shadow: 0 0 10px #33bfd0, 0 0  2 0px purple;
 }
 
 #readmore:hover {
@@ -128,7 +115,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
   color: white;
   text-shadow: #333;
   text-align: center;
@@ -156,6 +143,7 @@ p {
   font-family: monospace;
   color: #FFFCE6;
   font-size: 3ch;
+  text-shadow: 0 0 5px #33bfd0;
 }
 
 header {
