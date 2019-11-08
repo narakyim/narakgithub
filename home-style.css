@@ -108,6 +108,87 @@ a:hover {
   text-decoration: underline #33bfd0;
 }
 
+/* Social Media */
+@import "compass/css3";
+
+
+$icon-size: 3em;
+
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+$brands: (
+  twitter: #00acee T,
+  facebook: #3b5998 F,
+  pinterest: #cb2027 YT,
+  youtube: #b00 S,
+  soundcloud: #FF5700 P
+);
+
+
+.fa {
+  height: 2em;
+  font-size: $icon-size;
+  overflow: hidden;
+  margin: 0.5em;
+  position: relative;
+  text-decoration: none;
+  width: 2em;     
+  -webkit-backface-visibility: hidden;
+
+  
+  &:before, &:after {
+    left: 0;    
+    position: absolute;  
+    text-align: center;
+    transition: 0.5s;
+    top: 50%; 
+    width: 100%;
+  }
+  
+  &:before {
+    color: white;
+    transform: translate3D(0, -50%, 0);
+    z-index: 2;
+  }
+  
+  &:after {
+    padding-bottom: 25%;
+    padding-top: 300%;
+    top: 0;
+  }
+  
+  &:hover {
+    &:after {
+     transform: translate3D(0, -73%, 0);
+    }
+    &:before {
+      transform: translate3D(0, -250%, 0);
+    }    
+  }
+}
+
+
+@each $brand, $properties in $brands {
+  $color: nth($properties, 1);
+  $icon: nth($properties, 2);
+  
+  .fa-#{$brand} {
+    
+    &:after {
+      background-image: linear-gradient($color 25%, white 75%);
+      content: '#{$icon}';
+      color: $color;
+    }  
+
+  }
+  
+}
+
+
+
 #title-quote:hover {
   opacity: 1.0;
   font-size: 45px;
