@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dangrek&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kdam+Thmor|Preahvihear&display=swap');
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -21,7 +22,7 @@ html {
 
 /* Khmer Language */
 .khmer {
-  font-family: 'Dangrek', cursive;
+  font-family: 'Kdam Thmor', cursive;
 }
 
 /* Video */
@@ -95,14 +96,22 @@ a {
 }
 
 a:hover {
-  color: #333;
   font-weight: 100;
   text-decoration: underline;
   /* background-color: #33bfd0; */
 }
 
+#title-quote {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  opacity: 0.3;
+  text-decoration: underline #33bfd0;
+}
+
 #title-quote:hover {
-  text-shadow: 0 0 10px #33bfd0, 0 0  2 0px purple;
+  opacity: 1.0;
+  font-size: 45px;
+  text-decoration: none;
 }
 
 #readmore:hover {
