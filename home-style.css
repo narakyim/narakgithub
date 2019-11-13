@@ -104,15 +104,14 @@ a:hover {
 #title-quote {
   font-family: 'Press Start 2P', cursive;
   font-size: 40px;
-  opacity: 0.3;
-  text-decoration: underline #33bfd0;
+  opacity: 1;
 }
 
 /* Social Media */
 @import "compass/css3";
 
 
-$icon-size: 3em;
+$icon-size: 100em;
 
 
 *, *:after, *:before {
@@ -127,15 +126,18 @@ $brands: (
   soundcloud: #FF5700 P
 );
 
+#backtotop {
+  text-decoration: wavy;
+}
 
 .fa {
-  height: 2em;
+  height: 3em;
   font-size: $icon-size;
   overflow: hidden;
   margin: 0.5em;
   position: relative;
   text-decoration: none;
-  width: 2em;     
+  width: 3em;     
   -webkit-backface-visibility: hidden;
 
   
@@ -188,12 +190,12 @@ $brands: (
 }
 
 
-
+/* 
 #title-quote:hover {
   opacity: 1.0;
-  font-size: 45px;
+  font-size: 40px;
   text-decoration: none;
-}
+} */
 
 #readmore:hover {
   color: white;
@@ -272,6 +274,14 @@ footer {
 
 #credit {
   font-size: 2ch;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#copyright {
+  font-family: 'Press Start 2P', cursive;
+  font-style: italic;
+  font-size: 8px;
+  opacity: 90%;
 }
 
 /* Flexbox */
@@ -330,3 +340,33 @@ footer {
     margin: 30px;
   }
 }
+
+/* Animation Loop */
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 1.5s infinite;
+   -moz-animation: flickerAnimation 1.5s infinite;
+   -o-animation: flickerAnimation 1.5s infinite;
+    animation: flickerAnimation 1.5s infinite;
+}
+
