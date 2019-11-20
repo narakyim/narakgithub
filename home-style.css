@@ -90,14 +90,13 @@ body {
 a {
   color: #33bfd0;
   text-decoration: none;
-  -webkit-transition: color 0.3s ease-out;
-  -o-transition: color 0.3s ease-out;
-  transition: color 0.3s ease-out;
 }
 
 a:hover {
   font-weight: 100;
   text-decoration: underline;
+  text-decoration-style: dashed;
+  font-style: italic;
   /* background-color: #33bfd0; */
 }
 
@@ -369,4 +368,31 @@ footer {
    -o-animation: flickerAnimation 1.5s infinite;
     animation: flickerAnimation 1.5s infinite;
 }
+
+/* Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+ ::-webkit-scrollbar-track {
+   background: #C94F7C;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #B34FA6;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #BF4F4B;
+}
+:placeholder-shown {
+  font-family: 'Fredoka One', cursive;
+}
+
 
